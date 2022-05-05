@@ -113,8 +113,8 @@ margin-top: 5vh;
     transition: 1000ms;
 }
 
-.copiado{
-    background-color: #00c573;
+.copia:hover {
+    background: #00c573;
     color: #f3f5fc;
 }
 

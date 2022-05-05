@@ -1,3 +1,11 @@
+let saida = selecionarElemento("#saida"); 
+let botaoCript = selecionarElemento("#botaoCript");
+
+botaoCript.addEventListener("click", function(){
+    validar(entrada);
+    if(textoValido) criptografar(textoCapturado);
+}); 
+
 function criptografar(textoCapturado){
     let textoCripto = [];
     let textoFinal = "";
@@ -12,12 +20,12 @@ function criptografar(textoCapturado){
         else {textoCripto.push(textoCapturado[letra]);}
     };
     
-    // Percorre o array textoCripto, formando o texto final com o valor de cada índice 
+    // Percorre o array textoCripto, formando o texto final com a concatenção do valor de cada índice 
     for(i=0; i<textoCripto.length; i++){
         textoFinal += textoCripto[i];
     };    
 
-    saida.value = textoFinal;
+    saida.textContent = textoFinal;
 
-    return saida.value;
+    return saida.textContent;
 };

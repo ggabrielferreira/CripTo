@@ -1,3 +1,10 @@
+let botaoDescript = selecionarElemento("#botaoDescript");
+
+botaoDescript.addEventListener("click", function(){
+    validar(entrada);
+    if(textoValido) descriptografar(textoCapturado);
+}); 
+
 function descriptografar(textoCapturado){
     let textoDescripto = "";
 
@@ -7,6 +14,5 @@ function descriptografar(textoCapturado){
     textoDescripto = textoDescripto.replace(/ober/g, "o")
     textoDescripto = textoDescripto.replace(/ufat/g, "u")
 
-    return saida.value = textoDescripto;
-
+    return saida.textContent = textoDescripto;
 };

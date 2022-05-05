@@ -5,32 +5,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="css/base.css">
-    <title>CripThis</title>
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/index.css">
+
+    <script src="https://kit.fontawesome.com/7c4249a806.js" crossorigin="anonymous"></script>
+
+    <title>CripTo</title>
+    <link rel="icon" type="image/x-icon" href="/images/cripToIcon.png">
 </head>
 
 <body>
-    <header></header>
+    <header class="centralizado"> <img src="/images/cripToIcon.png" class="logo"> </header>
 
-    <main>
-        <textarea type="text" placeholder="digite seu texto" id="entrada"></textarea>
-        <textarea type="text" placeholder="digite seu texto" id="saida"></textarea>
-        <br>
-        <button id="botaoCript"> Criptografar </button>
-        <button id="botaoDescript"> Descriptografar </button>
-        <button id="botaoCopia"> Copiar </button>
+    <main class="centralizado">
+        <div class="container">
+                <div class="emissor">
+                    <textarea class="entrada" type="text" placeholder="Digite seu texto" id="entrada"></textarea>
+
+                    <div class="aviso hidden" id="aviso">
+                        <i class="fa-solid fa-circle-exclamation"></i> 
+                        <p id="textoAviso"></p>    
+                    </div> 
+
+                    <div class="botoesCriptoDescripto">
+                        <button class="botaoCripto" id="botaoCript"> Criptografar </button>
+                        <button class="botaoDescripto" id="botaoDescript"> Descriptografar </button>
+                    </div>
+                </div>
+
+                <div class="receptor">
+                    <div class="textoNaoEncontrado" id="textoNaoEncontrado">
+                        <h3 class="tituloNe"> Nenhuma mensagem encontrada </h3>
+                        <p class="mensagemNe"> Digite um texto que você deseja criptografar ou descriptografar </p>
+                    </div>   
+
+                    <div class="textoEncontrado hidden" id="textoEncontrado"> 
+                        <p id="saida"></p>
+                        <button class="copia" id="botaoCopia"> Copiar </button>
+                        <p class="hidden" id="textoCopiado"> Texto Copiado! </p>
+                    </div>
+                </div>
+            </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <a href="https://www.linkedin.com/in/gabriel-g-ferreira/"> <button class="redondo"><i class="fa-brands fa-linkedin"></i> </button> </a>
+        <a href="https://github.com/ggabrielferreira"> <button class="redondo"><i class="fa-brands fa-github"></i> </button> </a>
+    </footer>
 
-    <script src="js/selecionaelemento.js"></script>
-    <script src="js/capturatexto.js"></script>
-    <script src="js/valida.js"></script>
-    <script src="js/criptografa.js"></script>
-    <script src="js/descriptografa.js"></script>
-    <script src="js/copia.js"></script>
-    <script src="js/exibetexto.js"></script>
+    <script src="/js/selecionaelemento.js"></script>
+    <script src="/js/capturatexto.js"></script>
+    <script src="/js/valida.js"></script>
+    <script src="js/exibeerro.js"></script>
+    <script src="/js/criptografa.js"></script>
+    <script src="/js/descriptografa.js"></script>
+    <script src="/js/copia.js"></script>
 </body>
 
 </html>

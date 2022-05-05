@@ -1,0 +1,137 @@
+/* 00ffa2 cor1 */
+/* 1dcdbe cor2 */
+
+@font-face {
+    font-family: inter;
+    src: url('/fontes/Inter-VariableFont_slnt,wght.ttf');
+}
+
+body {
+    background: #f3f5fc;    
+}
+
+main {
+    font-family: inter;  
+}
+
+.centralizado {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 12vw;
+    margin-top: 5vh;    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Emissor */
+
+.entrada, .entrada::placeholder {
+resize: none;
+background: none;
+border: none;
+outline: none;
+height: 50vw;
+width: 100%;
+font-size: 25px;
+margin-top: 5vh;
+}
+
+.aviso {
+    margin: 5vh 0 0 0;
+    display: flex;
+    flex-direction: row;    
+}
+
+.aviso p {
+    margin: 0 0 0 2vw;
+    color: red;
+}
+
+.botoesCriptoDescripto {
+    margin: 2vh 0 0 0;
+}
+
+.botaoCripto, .botaoDescripto {
+    margin: 0 0 2vh 0;
+    background: #00c573;
+    border-radius: 4vw;
+    padding: 2vh;
+    width: 100%;
+    color: #f3f5fc;
+    border: none;
+}
+
+.botaoDescripto {
+    border: 1px solid #00c573;
+    background: none;
+    color:#00c573;
+}
+
+/* Receptor */
+
+.receptor {
+    background:#ffffff;
+    border-radius: 5vw;
+    margin: 5vh 0 0 0;
+    box-shadow: 0 2px 32px -8px #0000003f;    
+}
+
+.textoNaoEncontrado {
+    padding: 4vh 6vw;
+    text-align: center;
+}
+
+.tituloNe {
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+.mensagemNe {
+    margin-top: 2vh;
+}
+
+.textoEncontrado {
+    padding: 4vh 6vw;
+    font-size: 25px;
+    word-break: break-word;
+}
+
+.copia {
+    margin: 4vh 0 0 0;
+    background: #f3f5fc;
+    border-radius: 4vw;
+    padding: 2vh;
+    width: 100%;
+    color: #00c573;
+    border: 1px solid #00c573;
+}
+
+/* Footer */
+
+footer {
+    margin: 2.5vh 0 2vh 0;
+    text-align: center;
+    width: 100%;
+}
+
+a {
+    color: #00000000;
+}
+
+.redondo {
+    background: none;
+    border: none;
+    font-size: 5vw;
+}
+
+/* CLASSE PARA MUDAR IMAGEM DE ACORDO COM TAMANHO DO DISPOSITIVO */
+
+.hidden {
+    display: none;
+}

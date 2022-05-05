@@ -110,6 +110,12 @@ margin-top: 5vh;
     width: 100%;
     color: #00c573;
     border: 1px solid #00c573;
+    transition: 1000ms;
+}
+
+.copiado{
+    background-color: #00c573;
+    color: #f3f5fc;
 }
 
 /* Footer */

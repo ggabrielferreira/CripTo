@@ -9,9 +9,15 @@
     font-style: normal;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background: #f3f5fc;
     font-family: 'Inter';
+    height:100%;
+    position: relative;
 }
 
 .centralizado {
@@ -27,6 +33,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    flex: 1 0 auto;
 }
 
 /* EMISSOR */
@@ -78,8 +85,9 @@ body {
 .receptor {
     background: #ffffff;
     border-radius: 15px;
-    margin: 5vh 0 0 0;
+    margin: 5vh 0 50px 0;
     box-shadow: 0 2px 32px -8px #0000003f;
+    position:relative;
 }
 
 .imagemNe {
@@ -144,19 +152,23 @@ footer {
     font-size: 10px;
     justify-content:space-between;
     padding: 10px;  
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .challenge {
     color: #00c573;
-    font-size: 8px;
+    font-size: 10px;
 }
 
 .botoesFooter {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 a {
-    margin-right: 5px;
+    margin-right: 2px;
 }
 
 /* CLASSE PARA MUDAR IMAGEM DE ACORDO COM TAMANHO DO DISPOSITIVO */

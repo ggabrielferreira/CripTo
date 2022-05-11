@@ -1,0 +1,88 @@
+@media only screen and (min-width: 900px) {
+
+    .logo {
+        width: 12vw;
+    }
+
+    .emissor {
+        width: 50vw;
+        position: absolute;
+        left: 18vw;
+    }
+
+    .entrada, .entrada::placeholder {
+        resize: none;
+        background: none;
+        border: none;
+        outline: none;
+        height: 50vh;
+        line-height: 25px;
+    }
+
+    .botoesCriptoDescripto {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botaoCripto {
+        margin-right: 2vw;
+    }
+
+    .receptor {
+        margin: 0 0 2vh 0;
+        position: absolute;
+        top: 3vh;
+        width: 25vw;
+        height: 87vh;
+        right: 2vw;
+        box-shadow: 0px 24px 32px -8px #00000014;
+    }
+
+    .textoNaoEncontrado {
+        padding: 20vh 4vw;
+        text-align: center;
+    }
+
+    .imagemNe {
+        display: flex;
+        width: 100%;
+    }
+
+    .tituloNe {
+        padding: 2vh 0 0 0;
+    }
+
+    .mensagemNe {
+        font-size: 2vh;
+        color: #495057;
+    }
+
+    .textoEncontrado {
+        padding: 10px 2vw;
+        height: 30vh;
+    }
+
+    .saida {
+        height: 70vh;
+        padding-top: 2vh;
+        resize: none;
+    }
+
+    footer {
+        background: #000000;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        font-size: 15px;
+    }
+
+    .challenge {
+        font-size: inherit;
+    }
+
+    .botoesFooter {
+        font-size: 20px;
+    }
+
+}

@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/desktop.css">
 
     <script src="https://kit.fontawesome.com/7c4249a806.js" crossorigin="anonymous"></script>
 
@@ -16,42 +17,53 @@
 </head>
 
 <body>
-    <header class="centralizado"> <img src="images/cripToIcon.png" class="logo"> </header>
+    <header class="centralizado"> <img src="" class="logo" id="logo"> </header>
 
     <main class="centralizado">
         <div class="container">
-                <div class="emissor">
-                    <textarea class="entrada" type="text" placeholder="Digite seu texto" id="entrada"></textarea>
+            <div class="emissor">
+                <textarea class="entrada" type="text" placeholder="Digite seu texto" id="entrada"></textarea>
 
-                    <div class="aviso hidden" id="aviso">
-                        <i class="fa-solid fa-circle-exclamation"></i> 
-                        <p id="textoAviso"></p>    
-                    </div> 
-
-                    <div class="botoesCriptoDescripto">
-                        <button class="botaoCripto" id="botaoCript"> Criptografar </button>
-                        <button class="botaoDescripto" id="botaoDescript"> Descriptografar </button>
-                    </div>
+                <div class="aviso hidden" id="aviso">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p id="textoAviso"></p>
                 </div>
 
-                <div class="receptor">
-                    <div class="textoNaoEncontrado" id="textoNaoEncontrado">
-                        <h3 class="tituloNe"> Nenhuma mensagem encontrada </h3>
-                        <p class="mensagemNe"> Digite um texto que você deseja criptografar ou descriptografar </p>
-                    </div>   
-
-                    <div class="textoEncontrado hidden" id="textoEncontrado"> 
-                        <p id="saida"></p>
-                        <button class="copia" id="botaoCopia"> Copiar </button>
-                        <p class="hidden" id="textoCopiado"> Texto Copiado! </p>
-                    </div>
+                <div class="botoesCriptoDescripto">
+                    <button class="botaoCripto" id="botaoCript"> Criptografar </button>
+                    <button class="botaoDescripto" id="botaoDescript"> Descriptografar </button>
                 </div>
             </div>
+
+            <div class="receptor">
+                <div class="textoNaoEncontrado" id="textoNaoEncontrado">
+                    <img class="imagemNe" src="images/nothfound.svg">
+                    <h3 class="tituloNe"> Nenhuma mensagem encontrada </h3>
+                    <p class="mensagemNe"> Digite um texto que você deseja criptografar ou descriptografar </p>
+                </div>
+
+                <div class="textoEncontrado hidden" id="textoEncontrado">
+                    <textarea class="saida" id="saida" readonly></textarea>
+                    <button class="copia" id="botaoCopia"> Copiar </button>
+                    <p class="hidden" id="textoCopiado"> Texto Copiado! </p>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <a href="https://www.linkedin.com/in/gabriel-g-ferreira/"> <button class="redondo"><i class="fa-brands fa-linkedin"></i> </button> </a>
-        <a href="https://github.com/ggabrielferreira"> <button class="redondo"><i class="fa-brands fa-github"></i> </button> </a>
+        <div class="copyright">
+            <p> &#169; Gabriel G. Ferreira</p>
+        </div>
+
+        <div class="challenge">
+            <p> < CHALLENGE: Decodificador de Texto /> </p>
+        </div>
+
+        <div class="botoesFooter">
+            <a href="https://www.linkedin.com/in/gabriel-g-ferreira/"> <i class="fa-brands fa-linkedin"></i> </a>
+            <a href="https://github.com/ggabrielferreira"> <i class="fa-brands fa-github"></i> </a>
+        </div>
     </footer>
 
     <script src="js/selecionaelemento.js"></script>
@@ -61,6 +73,7 @@
     <script src="js/criptografa.js"></script>
     <script src="js/descriptografa.js"></script>
     <script src="js/copia.js"></script>
+    <script src="js/alteralogo.js"></script>
 </body>
 
 </html>

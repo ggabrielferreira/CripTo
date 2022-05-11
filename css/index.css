@@ -1,17 +1,17 @@
-/* 00ffa2 cor1 */
-/* 1dcdbe cor2 */
+/* COR 1: 00ffa2 */
+/* COR 2: 1dcdbe */
+/* COR 3: 00c573 */
 
 @font-face {
-    font-family: inter;
-    src: url('/fontes/Inter-VariableFont_slnt,wght.ttf');
+    font-family: 'inter';
+    src: url('../fontes/Inter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    background: #f3f5fc;    
-}
-
-main {
-    font-family: inter;  
+    background: #f3f5fc;
+    font-family: 'Inter';
 }
 
 .centralizado {
@@ -21,7 +21,7 @@ main {
 
 .logo {
     width: 12vw;
-    margin-top: 5vh;    
+    margin-top: 5vh;
 }
 
 .container {
@@ -29,27 +29,27 @@ main {
     flex-direction: column;
 }
 
-/* Emissor */
+/* EMISSOR */
 
 .entrada, .entrada::placeholder {
-resize: none;
-background: none;
-border: none;
-outline: none;
-height: 50vw;
-width: 100%;
-font-size: 25px;
-margin-top: 5vh;
+    resize: none;
+    background: none;
+    border: none;
+    outline: none;
+    height: 50vw;
+    width: 100%;
+    font-size: 25px;
+    margin-top: 5vh;
 }
 
 .aviso {
     margin: 5vh 0 0 0;
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
 }
 
 .aviso p {
-    margin: 0 0 0 2vw;
+    margin: 0 0 0 10px;
     color: red;
 }
 
@@ -60,7 +60,7 @@ margin-top: 5vh;
 .botaoCripto, .botaoDescripto {
     margin: 0 0 2vh 0;
     background: #00c573;
-    border-radius: 4vw;
+    border-radius: 15px;
     padding: 2vh;
     width: 100%;
     color: #f3f5fc;
@@ -70,16 +70,20 @@ margin-top: 5vh;
 .botaoDescripto {
     border: 1px solid #00c573;
     background: none;
-    color:#00c573;
+    color: #00c573;
 }
 
-/* Receptor */
+/* RECEPTOR */
 
 .receptor {
-    background:#ffffff;
-    border-radius: 5vw;
+    background: #ffffff;
+    border-radius: 15px;
     margin: 5vh 0 0 0;
-    box-shadow: 0 2px 32px -8px #0000003f;    
+    box-shadow: 0 2px 32px -8px #0000003f;
+}
+
+.imagemNe {
+    display: none;
 }
 
 .textoNaoEncontrado {
@@ -102,10 +106,21 @@ margin-top: 5vh;
     word-break: break-word;
 }
 
+.saida {
+    resize: vertical;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 25px;
+    line-height: 25px;
+    height: 10vh;
+}
+
 .copia {
-    margin: 4vh 0 0 0;
+    margin: 2vh 0 0 0;
     background: #f3f5fc;
-    border-radius: 4vw;
+    border-radius: 15px;
     padding: 2vh;
     width: 100%;
     color: #00c573;
@@ -118,22 +133,30 @@ margin-top: 5vh;
     color: #f3f5fc;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer {
-    margin: 2.5vh 0 2vh 0;
-    text-align: center;
-    width: 100%;
+    margin: 2vh 0 0 0;
+    display: flex;
+    align-items: center;
+    color: #f3f5fc;
+    background: #000000;
+    font-size: 10px;
+    justify-content:space-between;
+    padding: 10px;  
+}
+
+.challenge {
+    color: #00c573;
+    font-size: 8px;
+}
+
+.botoesFooter {
+    font-size: 15px;
 }
 
 a {
-    color: #00000000;
-}
-
-.redondo {
-    background: none;
-    border: none;
-    font-size: 5vw;
+    margin-right: 5px;
 }
 
 /* CLASSE PARA MUDAR IMAGEM DE ACORDO COM TAMANHO DO DISPOSITIVO */

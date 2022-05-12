@@ -65,8 +65,8 @@ hoje em dia tendem a ser muito maiores em smartphones do que em computadores. No
 
 <table>
   <tr>
-    <td align="center"> <img src="/images/vscode.png" width="40px"> </td>
-    <td align="center"> <img src="/images/photoshop.png" width="40px"> </td>
+    <td align="center"> <img src="/readme/vscode.png" width="40px"> </td>
+    <td align="center"> <img src="/readme/photoshop.png" width="40px"> </td>
   </tr>
    <tr>
     <td align="center"> VS Code </td>
@@ -78,9 +78,9 @@ hoje em dia tendem a ser muito maiores em smartphones do que em computadores. No
 
 <table>
   <tr>
-    <td align="center"> <img src="/images/html.png" width="40px"> </td>
-    <td align="center"> <img src="/images/css.png" width="40px">
-    <td align="center"> <img src="/images/js.png" width="40px">
+    <td align="center"> <img src="/readme/html.png" width="40px"> </td>
+    <td align="center"> <img src="/readme/css.png" width="40px">
+    <td align="center"> <img src="/readme/js.png" width="40px">
  </td>
   </tr>
   <tr>
